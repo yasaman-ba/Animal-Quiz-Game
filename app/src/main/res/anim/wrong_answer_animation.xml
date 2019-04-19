@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--duration is in milli second-->
+    <!-- for our answer animation we wanna move to the top so
+      our Y wil be decreased and get " - " -->
+
+    <translate android:duration="100"
+               android:fromYDelta="0"
+               android:toYDelta="-4%p"/>
+
+    <!-- startOffset means this translation
+        will start after 100 millisecond after last animation  -->
+    <translate android:duration="100"
+               android:fromYDelta="-4%p"
+               android:toYDelta="4%p"
+               android:startOffset="100"/>
+
+    <translate android:duration="100"
+               android:fromYDelta="4%p"
+               android:toYDelta="-4%p"
+               android:startOffset="200"/>
+
+</set>

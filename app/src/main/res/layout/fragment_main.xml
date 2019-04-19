@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/animalQuizLinearLayout"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <!--// we add two button in our first row in our app -->
+    <!-- lines attribute in buttons mean we can add
+        two line text inside of our button-->
+    <!-- "margin" attribute means margin for top,
+        bottom, left and right -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/firstRowLinearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/secondRowLinearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+       </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/thirdRowLinearLayout">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:lines="2"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/question_text"
+        android:id="@+id/txtQuestionNumber"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:textColor="#fff"/>
+
+    <!-- scale type attribute means how we put
+        our image inside image view  -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/imgAnimal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_value"
+        android:layout_marginLeft="@dimen/margin_left_value"
+        android:layout_marginRight="@dimen/margin_right_value"
+        android:scaleType="fitCenter"/>
+
+    <!-- gravity attribute belong to text inside of textview
+        and layout_gravity belong to textview -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAnswer"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="@dimen/answer_font_size"/>
+
+
+</LinearLayout>
